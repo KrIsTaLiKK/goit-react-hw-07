@@ -2,25 +2,20 @@ import { FaUser } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/operations';
+import { useMemo } from 'react';
+import { getRandomHexColor } from '../../helpers';
 import css from './Contact.module.css';
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16733259)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
 
 const Contact = ({ contact: { name, phone, id } }) => {
   const dispatch = useDispatch();
+
+  const iconColor = useMemo(() => getRandomHexColor(), []);
 
   return (
     <div className={css.contactInfoListWrap}>
       <ul className={css.contactInfoList}>
         <li>
-          <FaUser
-            className={css.icon}
-            style={{ color: `${getRandomHexColor()}` }}
-          />
+          <FaUser className={css.icon} style={{ color: `${iconColor}` }} />
           <span className={css.name}>{name}</span>
         </li>
         <li>
