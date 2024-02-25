@@ -1,0 +1,33 @@
+.searchField {
+  height: 40px;
+  width: 250px;
+  padding: 5px 15px;
+  font-size: 16px;
+  border: 1px solid rgb(169, 167, 167);
+  border-radius: 30px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.searchField::placeholder {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.searchField:focus-within {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
+}
+
+.searchWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: rgb(6, 6, 79);
+  font-weight: 500;
+}

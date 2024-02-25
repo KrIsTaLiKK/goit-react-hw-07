@@ -1,0 +1,39 @@
+.contactInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactInfoListWrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.deleteBtn {
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 20px;
+  outline: transparent;
+  border: 1px solid transparent;
+  background-color: #f6f0f0;
+  cursor: pointer;
+}
+
+.deleteBtn:is(:hover, :focus) {
+  color: red;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.name {
+  color: rgb(75, 73, 73);
+}

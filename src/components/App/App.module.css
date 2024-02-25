@@ -1,0 +1,20 @@
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.secondSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.secondSectionWrap {
+  width: 100%;
+}
+
+.mainTitle {
+  color: rgb(6, 6, 79);
+}
