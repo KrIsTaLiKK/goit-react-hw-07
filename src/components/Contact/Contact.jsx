@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { changeContact, deleteContact } from '../../redux/operations';
+import { deleteContact } from '../../redux/operations';
 import { FaUser } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
-import ContactModal from '../ContactModal/ContactModal';
+import ContactModal from '../ContactModal/ContactModal.jsx';
 import { getRandomHexColor } from '../../helpers.js';
 import css from './Contact.module.css';
 
